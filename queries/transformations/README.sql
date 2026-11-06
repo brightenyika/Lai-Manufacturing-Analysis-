@@ -24,3 +24,4 @@
     Employee_Rating INT,
     Downtime_Reason VARCHAR(30)
 );
+
