@@ -2,8 +2,8 @@
  
 Dataset of 1000 rows was extracted from Lai manufacturing Plc database. This dataset was analyzed to understand the pain point of the business. The attributes include:
 
-1. Operations_ID:  A unique identifier for each operation or record in the dataset.
-2. Product_ID: A unique identifier for each product in the dataset. It associates each operation with a specific product.
+* Operations_ID:  A unique identifier for each operation or record in the dataset.
+* Product_ID: A unique identifier for each product in the dataset. It associates each operation with a specific product.
 3. Product_Name: The name of the product associated with the operation.
 4. Product_Category: The category to which the product belongs (e.g., Home Appliances or Industrial Machinery).
 5. Production_Date: The date on which the operation or production occurred.
