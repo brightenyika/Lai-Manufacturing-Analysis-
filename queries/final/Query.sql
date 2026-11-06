@@ -261,7 +261,3 @@ SELECT
     ) AS downtime_percentage
 FROM downtime_metric
 ORDER BY downtime_percentage DESC;
-
-
-/*F15. What percentage of total downtime is attributable to each downtime reason?*/
-
