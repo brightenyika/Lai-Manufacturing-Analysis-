@@ -4,11 +4,11 @@ Dataset of 1000 rows was extracted from Lai manufacturing Plc database. This dat
 
 1. Operations_ID:  A unique identifier for each operation or record in the dataset.
 2. Product_ID: A unique identifier for each product in the dataset. It associates each operation with a specific product.
-✓ Product_Name: The name of the product associated with the operation.
-✓ Product_Category: The category to which the product belongs (e.g., Home Appliances or Industrial Machinery).
-✓ Production_Date: The date on which the operation or production occurred.
-✓ Production_Quantity: The quantity of the product produced during the operation.
-✓ Quality_Metrics: A measurement or assessment of the quality of the product produced during the operation. It may indicate whether the product "Passed," "Failed," or falls 
+3. Product_Name: The name of the product associated with the operation.
+4. Product_Category: The category to which the product belongs (e.g., Home Appliances or Industrial Machinery).
+5. Production_Date: The date on which the operation or production occurred.
+6. Production_Quantity: The quantity of the product produced during the operation.
+7. Quality_Metrics: A measurement or assessment of the quality of the product produced during the operation. It may indicate whether the product "Passed," "Failed," or falls 
   "In Between" quality standards.
 ✓ Quantity_in_Stock: The quantity of the product available in stock after the operation.
 ✓ Quantity_Sold: The quantity of the product that has been sold after the operation.
