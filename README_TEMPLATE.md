@@ -1,19 +1,16 @@
-# [Project Title]
-> *One sentence. What did you analyze, build, or solve - and why does it matter?*
+# Lai Manufacturing Plc - Analyzing and visualizing data in real time for operational efficiency
+> *Lai Manufacturing Plc understands the intricacies of optimizing processes, enhancing operational efficiency, and mitigating risks. Their journey has not been without hurdles which includes, the need for real-time reporting, ensuring top-notch data performance, and simplifying complex reports.*
 
 ---
 
 ## ⚙️ Project Type Flags
-> *Check what applies. This helps reviewers and collaborators understand the nature of the work at a glance. Delete this block before publishing.*
 
+- [ ] SQL Data Analysis
 - [ ] Exploratory Data Analysis (EDA)
-- [ ] SQL Analysis / Querying
-- [ ] Dashboard / Data Visualization
-- [ ] Data Pipeline / ETL
-- [ ] Predictive Modelling / Machine Learning
-- [ ] Data Cleaning / Wrangling
-- [ ] End-to-End (multiple of the above)
-- [ ] Other: ___________
+- [ ] Data Cleaning and Transformation
+- [ ] Business Analysis
+- [ ] Operations Analytics
+- [ ] Power BI Service – Publishing dashboards and enabling stakeholder access.
 
 ---
 
@@ -21,17 +18,14 @@
 1. [Project Overview](#1-project-overview)
 2. [Objectives](#2-objectives)
 3. [Project Scope & Tools](#3-project-scope--tools)
-4. [Repository Structure](#4-repository-structure)
-5. [Data Workflow](#5-data-workflow)
-6. [Data Model & Schema](#6-data-model--schema)
-7. [ERD - Entity Relationship Diagram](#7-erd--entity-relationship-diagram) *(SQL projects)*
-8. [Analysis & Metrics](#8-analysis--metrics)
-9. [Key Insights](#9-key-insights)
-10. [Recommendations](#10-recommendations)
-11. [Assumptions & Limitations](#11-assumptions--limitations)
-12. [Future Enhancements](#12-future-enhancements)
-13. [Deliverables](#13-deliverables)
-14. [Author](#14-author)
+4. [Data Workflow](#5-data-workflow)
+5. [ERD - Entity Relationship Diagram](#5-erd--entity-relationship-diagram)
+6. [Analysis & Metrics](#6-analysis--metrics)
+7. [Key Insights](#7-key-insights)
+8. [Recommendations](#8-recommendations)
+9. [Assumptions & Limitations](#9-assumptions--limitations)
+10. [Future Enhancements](#10-future-enhancements)
+11. [Author](#11-author)
 
 ---
 
@@ -56,13 +50,13 @@
   (Too vague. Could describe 10,000 projects. Describes none of them.)
 -->
 
-**Context:** [The business, research, or personal situation that motivated this project.]
+The company has been facing growing operational challenges that are affecting its overall productivity and efficiency. This project explored data across all sectors within the organization. The analysis revealed that downtime were mainly caused by human error followed by Material shortage. 
 
-**Problem Statement:** [The specific question or challenge you were addressing.]
+MedioPharm Medical Center is experiencing increasing operational challenges such as rising emergency room traffic, growing patient readmission rates, delayed doctor response times, and inconsistent patient outcomes across departments. 
 
-**Approach:** [In 1–2 sentences - how did you tackle it?]
+This project followed a structured sequence of analytical and technical phases to develop a comprehensive Power BI solution that provides hospital administrators and medical teams with real-time visibility into key performance indicators.
 
-**Outcome:** [What did you produce or discover?]
+The analysis revealed a 6.63% readmission rate, with Emergency and Pulmonology recording the highest admissions. Flu, respiratory conditions, and hypertension were the leading diagnoses, while 2,138 patients recovered. However, 432 ICU cases, 189 readmissions, and 90 deaths highlight areas requiring further attention.
 
 ---
 
@@ -84,12 +78,10 @@
   (These can't fail - which means they can't succeed either.)
 -->
 
-- **Primary Objective:** [The main thing you set out to do]
-- **Secondary Objective 1:** [Supporting goal]
-- **Secondary Objective 2:** [Supporting goal]
-- **Secondary Objective 3:** [Remove if not applicable]
-
-> 💡 *Every analysis decision in this project traces back to one of these objectives.*
+- Implement data-driven process optimization strategies to identify and eliminate bottlenecks and inefficiencies in manufacturing operations.
+- Create intuitive and user-friendly data visualization dashboards that empower decision-makers at all levels with actionable insights
+- Answer crucial questions relating to business using data analysis, such as; Product Performance Analysis, Quality Metrics Analysis, Supplier Performance Analysis,
+  Maintenance Analysis, Employee Performance Analysis, and Downtime Events Analysis
 
 ---
 
@@ -112,10 +104,10 @@
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** | [What is included - data sources, time periods, segments] |
-| **Out of Scope** | [What you explicitly excluded - and a brief reason why] |
-| **Time Period** | [Date range of the data or the project itself] |
-| **Granularity** | [Unit of analysis - row-level, daily aggregates, per-user, etc.] |
+| **In Scope** | Manufacturing production and efficiency analysis, Inventory levels, sales performance and stockout risk assessment, Employee productivity and performance evaluation. |
+| **Out of Scope** | Direct implementation of manufacturing process improvements, Live ERP or production management system development, Automated inventory replenishment. |
+| **Time Period** | 2023-04-01 – 2023-09-29 |
+| **Granularity** | Individual production operation records, product category, supplier, employee, shift, maintenance type, downtime reason and production date. |
 
 ### Tools & Technologies
 
@@ -126,51 +118,15 @@
 
 | Category | Tool(s) Used |
 |----------|-------------|
-| Data Storage | [e.g., PostgreSQL, CSV files, BigQuery, S3] |
-| Data Processing | [e.g., Python, R, SQL, Excel, dbt] |
-| Analysis | [e.g., pandas, dplyr, custom SQL queries] |
-| Visualization | [e.g., Matplotlib, Tableau, Power BI, Looker] |
-| Version Control | [e.g., Git / GitHub] |
-| Documentation | [e.g., Markdown, Notion] |
-| Other | [Any additional tools] |
+| Data Storage | CSV files |
+| Data Modeling & Analysis | SQL |
+| Data Cleaning and Transformation | Power Query & SQL |
+| Analytical Measures | SQL |
+| Visualization | Power BI |
 
 ---
 
-## 4. Repository Structure
-
-```
-[project-root]/
-│
-├── data/
-│   ├── raw/                  # Original, unmodified source data - never edited
-│   ├── processed/            # Cleaned and transformed data
-│   └── external/             # Reference data, lookup tables, third-party files
-│
-├── notebooks/                # Jupyter, R Markdown, or Colab notebooks
-│
-├── scripts/                  # Reusable .py, .R, or .sh processing files
-│
-├── queries/                  # SQL files (retain this folder for SQL-heavy projects)
-│   ├── exploratory/          # Ad-hoc or investigative queries
-│   ├── transformations/      # Cleaning and reshaping logic
-│   └── final/                # Production-ready or presentation queries
-│
-├── reports/                  # Final outputs: PDFs, slide decks, Word docs
-│
-├── visuals/                  # Exported charts, dashboard screenshots, ERD diagrams
-│
-├── docs/                     # Data dictionaries, schema notes, reference material
-│
-├── project_metadata.yml      # Machine-readable metadata (optional)
-└── README.md                 # You are here
-```
-
-> ⚠️ *Delete folders you didn't use. An empty folder is worse than no folder.*
-> SQL-heavy projects: keep `queries/`. Analysis-only projects: keep `notebooks/`. Both? Keep both.
-
----
-
-## 5. Data Workflow
+## 4. Data Workflow
 
 <!--
   Show how data moved through your project - from source to output.
@@ -206,56 +162,17 @@
 [Output / Visualisation / Reporting]
 ```
 
-1. **Source:** [Where did the data come from? Format, size, access method.]
-2. **Ingestion:** [How was it brought in?]
-3. **Cleaning:** [What issues did you find and fix?]
-4. **Transformation:** [What new fields, aggregations, or structures did you create?]
-5. **Analysis:** [What methods - statistical, visual, query-based, model-based?]
-6. **Output:** [What form do the results take?]
+1. **Source:** Extracted manufacturing operations data from the database and saved it as a CSV file for analysis.
+2. **Ingestion:** Imported the CSV dataset into PostgreSQL for analysis.
+3. **Cleaning:**  Standardised data formats, handled missing and null values, corrected date fields, and created categorical data.
+4. **Validation:** Checked data accuracy, consistency, duplicate records, missing values and data types to ensure data quality and reliability.
+5. **Transformation:** Created SQL queries, aggregate functions, window functions and Common Table Expressions (CTEs) to organise, transform and prepare data for meaningful analysis.
+6. **Output:** Developed an interactive Power BI dashboard to present key performance indicators (KPIs), operational trends, performance comparisons and actionable business insights.
+
 
 ---
 
-## 6. Data Model & Schema
-
-<!--
-  Define your fields so that someone reading your analysis can follow along
-  without digging through your code.
-
-  WHAT GOOD LOOKS LIKE (one row example):
-  | transaction_id | string | Unique identifier per sales transaction | TXN-00482 |
-  | return_flag    | boolean | Whether the transaction included a return | TRUE |
-  | region_code    | string | Two-letter identifier for store region | "NE" |
-
-  WHAT TO AVOID:
-  ❌ Skipping this section because "the field names are self-explanatory."
-     They're not. Not to a reviewer. Not to you in six months.
-
-  📌 FOR SQL PROJECTS: If you have multiple tables, create one block per table.
-     Describe join keys and relationships here. Your ERD (Section 7) will
-     visualise what this section describes in text.
-
-  📌 FOR NON-SQL PROJECTS: Describe the shape of your dataset informally
-     if a formal schema doesn't apply. Even one paragraph is more helpful than nothing.
--->
-
-### Dataset / Table: `[name]`
-
-| Field Name | Data Type | Description | Example Value |
-|------------|-----------|-------------|---------------|
-| `[field_1]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_2]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_3]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-
-> **Row count (approx.):** [X rows]
-> **Date range:** [Start] – [End]
-> **Key join / relationship:** [e.g., `orders.customer_id` → `customers.id`]
-
-*Add additional table blocks as needed for multi-table projects.*
-
----
-
-## 7. ERD - Entity Relationship Diagram
-### *(Primarily for SQL Projects - remove this section if not applicable)*
+## 5. ERD - Entity Relationship Diagram
 
 <!--
   An ERD shows how your tables connect to each other visually.
@@ -278,75 +195,12 @@
   PICK ONE. Don't use all three. Delete the options you don't use.
 -->
 
-### Option A - Embedded Image
-![ERD Diagram](visuals/erd.png)
-*[Brief caption: e.g., "Three-table schema - orders, customers, and products joined on shared IDs."]*
+![ERD Diagram](https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/gjcbwooalschpjyvpv6k)
+* A five-table schema - patients, admissions, vitals, and doctor visits joined on shared IDs.
 
 ---
 
-### Option B - dbdiagram.io Schema Definition
-```
-Table orders {
-  order_id    int     [pk]
-  customer_id int     [ref: > customers.customer_id]
-  product_id  int     [ref: > products.product_id]
-  order_date  date
-  amount      float
-}
-
-Table customers {
-  customer_id int  [pk]
-  region_code string
-  signup_date date
-}
-
-Table products {
-  product_id   int    [pk]
-  category     string
-  unit_price   float
-}
-```
-*Paste this into [dbdiagram.io](https://dbdiagram.io) to view the visual.*
-
----
-
-### Option C - Mermaid Diagram *(renders on GitHub)*
-```mermaid
-erDiagram
-    ORDERS {
-        int order_id PK
-        int customer_id FK
-        int product_id FK
-        date order_date
-        float amount
-    }
-    CUSTOMERS {
-        int customer_id PK
-        string region_code
-        date signup_date
-    }
-    PRODUCTS {
-        int product_id PK
-        string category
-        float unit_price
-    }
-    ORDERS ||--o{ CUSTOMERS : "placed by"
-    ORDERS ||--o{ PRODUCTS : "contains"
-```
-
----
-
-**Table Relationships Summary:**
-
-| Relationship | Join Key | Type |
-|-------------|----------|------|
-| `orders` → `customers` | `customer_id` | Many-to-One |
-| `orders` → `products` | `product_id` | Many-to-One |
-| [Add rows as needed] | | |
-
----
-
-## 8. Analysis & Metrics
+## 6. Analysis & Metrics
 
 <!--
   Explain what you measured and how - before you share what you found.
@@ -365,30 +219,28 @@ erDiagram
      the implementation in the code.
 -->
 
-### Analytical Approach
-
-[Describe how you approached the analysis. Were you exploring patterns? Testing a hypothesis? Building and validating a pipeline? Be honest about your method - exploratory work is valid, just call it that.]
-
 ### Key Metrics Defined
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
-| `[Metric 1]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 2]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 3]` | [What it measures, in one sentence] | [What decision or question it answers] |
+| `Total Visits` | Number of total visits | Tracks overall hospital visit volume |
+| `Patient Readmission Rate` | Number of readmitted patients divided by total admissions  | Measures care quality and identifies areas that may require better follow-up or treatment |
+| `30-Day readmissions` | Number of patients readmitted within 30 days  | Tracks the hospital’s 30-day readmission performance |
+| `Average Dr Response Time` | Average time taken to respond to each patient | Measures how quickly doctors respond to patients |
+| `ER admissions` | Number of admissions where the department is "Emergency" | Tracks the total number of emergency admissions |
+
 
 ### Methods Used
 
-- [e.g., Descriptive statistics - distribution, central tendency, outlier detection]
-- [e.g., Trend analysis across [time period]]
-- [e.g., Segmentation / group comparison by [dimension]]
-- [e.g., Correlation analysis between [variable A] and [variable B]]
-- [e.g., SQL window functions for [specific aggregation]]
-- [e.g., Custom aggregation or transformation logic in [tool]]
+- Descriptive statistics – Analyzed patient visits, admissions, readmissions, response times, and demographic distributions.
+- Trend analysis – Examined patient visits and admissions across time to identify patterns and changes.
+- Segmentation / group comparison – Compared performance across departments, age groups, diagnoses, and other patient categories.
+- KPI analysis – Developed key performance indicators such as total visits, ER admissions, readmission rate, and average response time.
+- Custom transformations in Power BI – Created calculated columns, measures, age groups, visit hours, length of stay, and calendar tables using Power Query and DAX.
 
 ---
 
-## 9. Key Insights
+## 7. Key Insights
 
 <!--
   Findings + implications. Not just what happened - what it means.
@@ -408,21 +260,19 @@ erDiagram
   Aim for 3–6 insights. Quality over quantity.
 -->
 
-**Insight 1: [Short descriptive headline]**
-[What you found + what it suggests. One short paragraph.]
+**Medication Services:** Medication-related concerns were the leading reason patients visited the hospital. This points to a needed improvement in refill processes and prescription renewals.
 
-**Insight 2: [Short descriptive headline]**
-[What you found + what it suggests.]
+**Readmission Spike:** Readmissions spiked sharply in February, reaching 76 cases, before gradually declining through June. This pattern may indicate a seasonal or post-holiday effect.
 
-**Insight 3: [Short descriptive headline]**
-[What you found + what it suggests.]
+**Departmental Performance:** General Medicine (37), Cardiology (35), and ICU (34) lead in readmission volume, showing these departments carry the heaviest recurring patient load.
 
-**Insight 4 (if applicable): [Short descriptive headline]**
-[What you found + what it suggests.]
+**Response Times:** Average response times were consistent across departments at approximately 16 minutes, suggesting that response speed is relatively standardized and is unlikely to be a major differentiator in departmental performance.
+
+**Vitals:** The 7-day vitals trend shows that abnormal cases consistently outnumbered normal cases, indicating a persistent pattern rather than a one-time increase.
 
 ---
 
-## 10. Recommendations
+## 8. Recommendations
 
 <!--
   Action-oriented. Addressed to a real audience.
@@ -443,15 +293,16 @@ erDiagram
      (This is a placeholder, not a recommendation.)
 -->
 
-| Priority | Recommendation | Based On | Suggested Owner |
-|----------|---------------|----------|-----------------|
-| High | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Medium | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Low | [Exploratory or longer-term suggestion] | [Insight it comes from] | [Who should act] |
+| Recommendation | Based On | Suggested Owner |
+|-------------------------|----------|-----------------|
+| Standardize post-discharge monitoring hospital-wide | Readmissions | Care Coordinators |
+| Strengthen discharge planning, prescription renewal concern, and post-discharge follow-up to reduce avoidable readmissions | Readmission spike | Physicians and Case Manager| 
+| Prioritize resources and staffing for high-demand departments, particularly Emergency, Pulmonology, Cardiology, and ICU | Departmental Performance | Head of Departments |
+| Investigate root causes behind the high abnormal-vitals ratio | Vitals | Doctors |
 
 ---
 
-## 11. Assumptions & Limitations
+## 9. Assumptions & Limitations
 
 <!--
   WHAT GOOD LOOKS LIKE:
@@ -469,21 +320,18 @@ erDiagram
 -->
 
 ### Assumptions
-- [What did you treat as true without being able to verify?]
-- [What simplifications did you make for scope or feasibility?]
-- [What domain rules or definitions did you accept as given?]
+- The recorded reason for visit is assumed to accurately represent the patient's primary concern. 
+- Department classifications are assumed to be accurate and consistent.
+- Vital-sign classifications of “normal” and “abnormal” are assumed to be correctly categorized according to the definitions provided in the dataset.
 
 ### Limitations
-- [What gaps exist in the data?]
-- [What analysis was out of scope but could affect interpretation?]
-- [What would a more rigorous version of this project include?]
-- [Are there known biases in the data source or collection method?]
-
-> *The goal here is pre-emptive Q&A. What would a thoughtful skeptic push back on? Document the answer here, before they ask.*
+- Patient characteristics and external factors.
+- The analysis focuses on descriptive and operational insights.
+- Response time alone does not measure the quality of care.
 
 ---
 
-## 12. Future Enhancements
+## 10. Future Enhancements
 
 <!--
   WHAT GOOD LOOKS LIKE:
@@ -498,33 +346,20 @@ erDiagram
   ❌ Listing aspirational features that don't follow logically from the work.
 -->
 
-- [ ] [Enhancement 1 - specific and traceable to a real gap in this project]
-- [ ] [Enhancement 2]
-- [ ] [Enhancement 3]
-- [ ] [Enhancement 4]
+- [ ] Incorporate additional data sources such as pharmacy records, laboratory results, and patient satisfaction surveys for deeper analysis.
+- [ ] Develop machine learning models to predict patient readmissions, abnormal vital signs, and high-risk patients.
+- [ ] Automated alerts to monitor response times, patient volume, and critical healthcare metrics.
 
 ---
 
-## 13. Deliverables
+## 11. Author
 
-| Deliverable | Description | Location |
-|-------------|-------------|----------|
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
+**Bright Enyika**
 
----
-
-## 14. Author
-
-**[Your Name]**
-[Your role or title - current or target]
-
-- 🔗 [LinkedIn URL]
-- 💼 [Portfolio or GitHub profile URL]
-- 📧 [Email - optional]
+*Data Analyst*
+- 🔗 [https://www.linkedin.com/in/bright-enyika/]
+- 💼 [https://brightenyika.github.io/#]
 
 ---
 
-*Last updated: [Month YYYY]*
-*If this template helped you, consider starring the repository.*
+*Last updated: August 2025*
