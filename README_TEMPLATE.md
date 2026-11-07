@@ -20,10 +20,8 @@
 3. [Project Scope & Tools](#3-project-scope--tools)
 4. [Data Workflow](#5-data-workflow)
 5. [ERD - Entity Relationship Diagram](#5-erd--entity-relationship-diagram)
-6. [Analysis & Metrics](#6-analysis--metrics)
 7. [Key Insights](#7-key-insights)
 8. [Recommendations](#8-recommendations)
-9. [Assumptions & Limitations](#9-assumptions--limitations)
 10. [Future Enhancements](#10-future-enhancements)
 11. [Author](#11-author)
 
@@ -51,12 +49,6 @@
 -->
 
 The company has been facing growing operational challenges that are affecting its overall productivity and efficiency. This project explored data across all sectors within the organization. The analysis revealed that downtime were mainly caused by human error followed by Material shortage. 
-
-MedioPharm Medical Center is experiencing increasing operational challenges such as rising emergency room traffic, growing patient readmission rates, delayed doctor response times, and inconsistent patient outcomes across departments. 
-
-This project followed a structured sequence of analytical and technical phases to develop a comprehensive Power BI solution that provides hospital administrators and medical teams with real-time visibility into key performance indicators.
-
-The analysis revealed a 6.63% readmission rate, with Emergency and Pulmonology recording the highest admissions. Flu, respiratory conditions, and hypertension were the leading diagnoses, while 2,138 patients recovered. However, 432 ICU cases, 189 readmissions, and 90 deaths highlight areas requiring further attention.
 
 ---
 
@@ -219,24 +211,13 @@ The analysis revealed a 6.63% readmission rate, with Emergency and Pulmonology r
      the implementation in the code.
 -->
 
-### Key Metrics Defined
-
-| Metric | Plain-Language Definition | Why It Matters |
-|--------|--------------------------|----------------|
-| `Total Visits` | Number of total visits | Tracks overall hospital visit volume |
-| `Patient Readmission Rate` | Number of readmitted patients divided by total admissions  | Measures care quality and identifies areas that may require better follow-up or treatment |
-| `30-Day readmissions` | Number of patients readmitted within 30 days  | Tracks the hospital’s 30-day readmission performance |
-| `Average Dr Response Time` | Average time taken to respond to each patient | Measures how quickly doctors respond to patients |
-| `ER admissions` | Number of admissions where the department is "Emergency" | Tracks the total number of emergency admissions |
-
-
 ### Methods Used
 
-- Descriptive statistics – Analyzed patient visits, admissions, readmissions, response times, and demographic distributions.
-- Trend analysis – Examined patient visits and admissions across time to identify patterns and changes.
-- Segmentation / group comparison – Compared performance across departments, age groups, diagnoses, and other patient categories.
-- KPI analysis – Developed key performance indicators such as total visits, ER admissions, readmission rate, and average response time.
-- Custom transformations in Power BI – Created calculated columns, measures, age groups, visit hours, length of stay, and calendar tables using Power Query and DAX.
+- Descriptive statistics – Summarised production volumes, sales quantities, inventory levels, supplier lead times and equipment downtime to understand overall performance.
+- Trend analysis – Analyzed production output, sales performance, quality metrics and downtime patterns across production dates and shifts.
+- Segmentation / group comparison – Compared performance across product categories, suppliers, employees, production shifts, maintenance types and downtime reasons.
+- KPI analysis – Calculated production efficiency, sales rates, stockout risks, quality pass rates, employee ratings, supplier lead times and downtime contributions.
+- Custom transformations in Power BI – Created calculated columns. 
 
 ---
 
@@ -302,8 +283,6 @@ The analysis revealed a 6.63% readmission rate, with Emergency and Pulmonology r
 
 ---
 
-## 9. Assumptions & Limitations
-
 <!--
   WHAT GOOD LOOKS LIKE:
   Assumption: "Transaction records were assumed to be complete for all five regions.
@@ -318,16 +297,6 @@ The analysis revealed a 6.63% readmission rate, with Emergency and Pulmonology r
      Every project has limitations. Documenting them is a sign of
      analytical maturity - not a confession of failure.
 -->
-
-### Assumptions
-- The recorded reason for visit is assumed to accurately represent the patient's primary concern. 
-- Department classifications are assumed to be accurate and consistent.
-- Vital-sign classifications of “normal” and “abnormal” are assumed to be correctly categorized according to the definitions provided in the dataset.
-
-### Limitations
-- Patient characteristics and external factors.
-- The analysis focuses on descriptive and operational insights.
-- Response time alone does not measure the quality of care.
 
 ---
 
