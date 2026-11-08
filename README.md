@@ -48,7 +48,7 @@
   (Too vague. Could describe 10,000 projects. Describes none of them.)
 -->
 
-Lai Manufacturing Plc faces challenges with production downtime, inventory management, and operational efficiency. The analysis identified Industrial Mixers as a key contributor to sales and production but also the product with the highest quality failures. Human Error and Material Shortages were the main causes of downtime. Improving quality control, employee training, supplier performance, and inventory management can help reduce costs and increase productivity.
+Lai Manufacturing Plc faces challenges with operational efficiency. The analysis identified Industrial Mixers as a key contributor to sales and production but also the product with the highest quality failures. Human Error and Material Shortages were the main causes of downtime. Therefore, Improving quality control, employee training, supplier performance, and inventory management can help reduce costs and increase productivity.
 
 ---
 
@@ -71,9 +71,8 @@ Lai Manufacturing Plc faces challenges with production downtime, inventory manag
 -->
 
 - Implement data-driven process optimization strategies to identify and eliminate bottlenecks and inefficiencies in manufacturing operations.
-- Create intuitive and user-friendly data visualization dashboards that empower decision-makers at all levels with actionable insights
-- Answer crucial questions relating to business using data analysis, such as; Product Performance Analysis, Quality Metrics Analysis, Supplier Performance Analysis,
-  Maintenance Analysis, Employee Performance Analysis, and Downtime Events Analysis
+- Create intuitive and user-friendly data visualization dashboards that empower decision-makers at all levels with actionable insights.
+- Answer crucial questions relating to Product Performance, Quality Metrics, Supplier Performance, Maintenance, Employee Performance, and Downtime Events.
 
 ---
 
@@ -276,7 +275,7 @@ Lai Manufacturing Plc faces challenges with production downtime, inventory manag
 
 | Recommendation | Based On | Suggested Owner |
 |-------------------------|----------|-----------------|
-| Maintain high production levels of Industrial Mixers to meet customer demand and continue monitoring sales trends and customer demand to ensure consistent product performance.| Product Performance | Production Manager |
+| Maintain high production levels of Industrial Mixers to meet customer demand and continue monitoring sales trends to ensure consistent product performance.| Product Performance | Production Manager |
 |Investigate the causes of quality failures in Industrial Mixers and strengthen quality inspections throughout the production process. | Quality Metrics | QA Department | 
 | Monitor Hawkins-Miller closely to identify the reasons for longer delivery times and consider prioritizing suppliers like Adam, Murphy & Wilson due to their shorter lead times. | Supplier Performance | Supply Chain Department |
 | Recognize and reward high-performing employees like Sarah Lloyds and Melissa Kim and encourage other employees to adopt similar productive work habits. | Employee Performance | HR Department |
