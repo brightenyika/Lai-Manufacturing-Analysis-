@@ -48,7 +48,7 @@
   (Too vague. Could describe 10,000 projects. Describes none of them.)
 -->
 
-The company has been facing growing operational challenges that are affecting its overall productivity and efficiency. This project explored data across all sectors within the organization. The analysis revealed that downtime were mainly caused by human error followed by Material shortage. 
+Lai Manufacturing Plc faces challenges with production downtime, inventory management, and operational efficiency. The analysis identified Industrial Mixers as a key contributor to sales and production but also the product with the highest quality failures. Human Error and Material Shortages were the main causes of downtime. Improving quality control, employee training, supplier performance, and inventory management can help reduce costs and increase productivity.
 
 ---
 
@@ -333,4 +333,4 @@ The company has been facing growing operational challenges that are affecting it
 
 ---
 
-*Last updated: September 2026*
+*Last updated: November 2026*
