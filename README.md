@@ -18,7 +18,7 @@
 1. [Project Overview](#1-project-overview)
 2. [Objectives](#2-objectives)
 3. [Project Scope & Tools](#3-project-scope--tools)
-4. [Data Workflow](#5-data-workflow)
+4. [Data Workflow](#4-data-workflow)
 5. [ERD - Entity Relationship Diagram](#5-erd--entity-relationship-diagram)
 7. [Key Insights](#7-key-insights)
 8. [Recommendations](#8-recommendations)
