@@ -111,9 +111,9 @@ The company has been facing growing operational challenges that are affecting it
 | Category | Tool(s) Used |
 |----------|-------------|
 | Data Storage | CSV files |
-| Data Modeling & Analysis | SQL |
-| Data Cleaning and Transformation | Power Query & SQL |
-| Analytical Measures | SQL |
+| Data Modeling & Analysis | PostgreSQL |
+| Data Cleaning and Transformation | PostgreSQL |
+| Analytical Measures | PostgreSQL |
 | Visualization | Power BI |
 
 ---
@@ -187,7 +187,7 @@ The company has been facing growing operational challenges that are affecting it
   PICK ONE. Don't use all three. Delete the options you don't use.
 -->
 
-![ERD Diagram](https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/gjcbwooalschpjyvpv6k)
+![ERD Diagram](https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/ql1ze9yas1rrwqhqenxz)
 * A five-table schema - patients, admissions, vitals, and doctor visits joined on shared IDs.
 
 ---
