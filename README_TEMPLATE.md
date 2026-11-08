@@ -188,7 +188,7 @@ The company has been facing growing operational challenges that are affecting it
 -->
 
 ![ERD Diagram](https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/ql1ze9yas1rrwqhqenxz)
-* A five-table schema - patients, admissions, vitals, and doctor visits joined on shared IDs.
+* A five-table schema - Operations, Employees, Products, Suppliers, and Calender, all joined on shared IDs.
 
 ---
 
@@ -241,15 +241,15 @@ The company has been facing growing operational challenges that are affecting it
   Aim for 3–6 insights. Quality over quantity.
 -->
 
-**Medication Services:** Medication-related concerns were the leading reason patients visited the hospital. This points to a needed improvement in refill processes and prescription renewals.
+**Product Performance:** The analysis reveals that Industrial Mixers consistently record high production quantities and sales over time; It highlights Industrial Mixers as one of the company's key product contributors, making them important to overall production and sales performance. 
 
-**Readmission Spike:** Readmissions spiked sharply in February, reaching 76 cases, before gradually declining through June. This pattern may indicate a seasonal or post-holiday effect.
+**Quality Metrics:** Production quality remained consistent across products; It fluctuated between 63% and 67%. However, Industrial Mixers recorded the highest quality failures despite leading in production and sales. Increased production driven by customer demand may have contributed to these failures. 
 
-**Departmental Performance:** General Medicine (37), Cardiology (35), and ICU (34) lead in readmission volume, showing these departments carry the heaviest recurring patient load.
+**Supplier Performance:** Adam, Murphy & Wilson had the shortest average lead times, while Hawkins-Miller had the longest. This suggests that Hawkins-Miller may need closer monitoring to identify possible delays and improve procurement efficiency.
 
-**Response Times:** Average response times were consistent across departments at approximately 16 minutes, suggesting that response speed is relatively standardized and is unlikely to be a major differentiator in departmental performance.
+**Employee Performance:** Sarah Lloyds was the highest-performing employee and also the most active; achieving a total production of 63K. Melissa Kim followed closely in second place with a total production of 61K. This indicates that both employees demonstrated strong productivity. 
 
-**Vitals:** The 7-day vitals trend shows that abnormal cases consistently outnumbered normal cases, indicating a persistent pattern rather than a one-time increase.
+**Downtime Events:** The two most common causes of downtime were Human Error and Material Shortages. Human Error affected Industrial Mixers the most, with 151 downtime events, while Material Shortages had a greater impact on Air Conditioners. This suggests that improving employee training and material availability could help reduce downtime and improve overall productivity.
 
 ---
 
@@ -276,10 +276,11 @@ The company has been facing growing operational challenges that are affecting it
 
 | Recommendation | Based On | Suggested Owner |
 |-------------------------|----------|-----------------|
-| Standardize post-discharge monitoring hospital-wide | Readmissions | Care Coordinators |
-| Strengthen discharge planning, prescription renewal concern, and post-discharge follow-up to reduce avoidable readmissions | Readmission spike | Physicians and Case Manager| 
-| Prioritize resources and staffing for high-demand departments, particularly Emergency, Pulmonology, Cardiology, and ICU | Departmental Performance | Head of Departments |
-| Investigate root causes behind the high abnormal-vitals ratio | Vitals | Doctors |
+| Maintain high production levels of Industrial Mixers to meet customer demand and continue monitoring sales trends and customer demand to ensure consistent product performance.| Product Performance | Production Manager |
+|Investigate the causes of quality failures in Industrial Mixers and strengthen quality inspections throughout the production process. | Quality Metrics | QA Department | 
+| Monitor Hawkins-Miller closely to identify the reasons for longer delivery times and consider prioritizing suppliers like Adam, Murphy & Wilson due to their shorter lead times. | Supplier Performance | Supply Chain Department |
+| Recognize and reward high-performing employees like Sarah Lloyds and Melissa Kim and encourage other employees to adopt similar productive work habits. | Employee Performance | HR Department |
+| Provide employees with additional training to reduce human errors, especially in Industrial Mixer production and Improve inventory planning to prevent material shortages, particularly for Air Conditioners. | Downtime Events | HR Department |
 
 ---
 
@@ -315,9 +316,10 @@ The company has been facing growing operational challenges that are affecting it
   ❌ Listing aspirational features that don't follow logically from the work.
 -->
 
-- [ ] Incorporate additional data sources such as pharmacy records, laboratory results, and patient satisfaction surveys for deeper analysis.
-- [ ] Develop machine learning models to predict patient readmissions, abnormal vital signs, and high-risk patients.
-- [ ] Automated alerts to monitor response times, patient volume, and critical healthcare metrics.
+- [ ] Implement real-time dashboards to track production, product quality, and downtime to allow management identify issues and respond quickly.
+- [ ] Use historical downtime data to predict possible equipment failures and schedule maintenance before breakdowns occur.
+- [ ] Introduce more frequent quality inspections and automated checks for high demand products to reduce defects.
+- [ ] Provide ongoing training and performance evaluations to improve employee productivity and reduce human errors.
 
 ---
 
@@ -331,4 +333,4 @@ The company has been facing growing operational challenges that are affecting it
 
 ---
 
-*Last updated: August 2025*
+*Last updated: September 2026*
