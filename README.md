@@ -1,5 +1,5 @@
 # Lai Manufacturing Plc - Analyzing and visualizing data in real time for operational efficiency
-> *Lai Manufacturing Plc understands the intricacies of optimizing processes, enhancing operational efficiency, and mitigating risks. Their journey has not been without hurdles which includes, the need for real-time reporting, ensuring top-notch data performance, and simplifying complex reports.*
+> *Lai Manufacturing Plc understands the intricacies of optimizing processes, enhancing operational efficiency, and mitigating risks. Their journey has not been without hurdles which includes, the need for real-time reporting to ensure top-notch data performance, and simplify complex reports.*
 
 ---
 
@@ -20,10 +20,11 @@
 3. [Project Scope & Tools](#3-project-scope--tools)
 4. [Data Workflow](#4-data-workflow)
 5. [ERD - Entity Relationship Diagram](#5-erd--entity-relationship-diagram)
-7. [Key Insights](#7-key-insights)
+6. [Analysis & Metrics](#6-key-insights)
+7. [Key Insights](#7-Analysis-Metrics)
 8. [Recommendations](#8-recommendations)
-10. [Future Enhancements](#10-future-enhancements)
-11. [Author](#11-author)
+9. [Future Enhancements](#10-future-enhancements)
+10. [Author](#11-author)
 
 ---
 
